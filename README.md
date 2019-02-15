@@ -1,5 +1,7 @@
 A game : Alien_invasion
 
+python3 Pygame
+
 Introduction
 
 This is my EE551 python individual project
@@ -10,7 +12,9 @@ Purposals
 
 This project makes a simple game.
 
-I need Create a spacecraft that can move and shoot left and right based on user input
+TODO
+       
+       Create a spacecraft that can move and shoot left and right based on user input
        
        Create a group of aliens as targets for shooting 
        
