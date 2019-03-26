@@ -19,3 +19,6 @@ TODO
        Create a group of aliens as targets for shooting 
        
        make other improvement Such as limiting the number of ships available to players and adding scoreboards    
+
+
+The main program is alien_invasion.py
