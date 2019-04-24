@@ -3,6 +3,7 @@ import sys
 from bullet import Bullet
 from alien import Alien
 from time import sleep
+
 import pygame
 
 
@@ -191,3 +192,7 @@ def update_aliens(ai_settings, stats, sb, screen, ship, aliens, bullets):
         ship_hit(ai_settings, stats, sb, screen, ship, aliens, bullets)
     check_aliens_bottom(ai_settings, stats, sb, screen, ship, aliens, bullets)
 # alien fleet
+
+def update_music(music):
+    music.update()
+    
