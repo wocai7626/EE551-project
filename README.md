@@ -22,3 +22,6 @@ TODO
 
 
 The main program is alien_invasion.py
+
+reference:
+book:Python Crash Course A Hands-On, Project-Based Introduction to Programming
