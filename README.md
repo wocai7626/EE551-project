@@ -23,6 +23,8 @@ TODO
        We can use the arrow keys to control our own spaceship.（Only left and right control）
        
        Fire with the space bar
+       
+       The enemy will move down
 
 
 The main program is alien_invasion.py
