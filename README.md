@@ -18,7 +18,11 @@ TODO
        
        Create a group of aliens as targets for shooting 
        
-       make other improvement Such as limiting the number of ships available to players and adding scoreboards    
+       make other improvement Such as limiting the number of ships available to players and adding scoreboards
+       
+       We can use the arrow keys to control our own spaceship.（Only left and right control）
+       
+       Fire with the space bar
 
 
 The main program is alien_invasion.py
