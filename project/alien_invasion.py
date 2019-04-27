@@ -8,9 +8,9 @@ from pygame.sprite import Group
 from button import Button
 from scoreboard import Scoreboard
 from music import Music
+from musicchange import Musicchange
 def run_game():
     pygame.init()
-    mus = Music()
     ai_settings = Settings()
     screen = pygame.display.set_mode(
         (ai_settings.screen_width, ai_settings.screen_height))
@@ -23,6 +23,8 @@ def run_game():
     stats = GameStats(ai_settings)
     play_button = Button(ai_settings, screen, "Play")
     sb = Scoreboard(ai_settings, screen, stats)
+    mus = Music('1.mp3')
+    musc = Musicchange()
     while True:
         gf.check_events(ai_settings, screen, stats, sb, play_button, ship, aliens, bullets)
 
@@ -30,7 +32,7 @@ def run_game():
             ship.update()
             gf.update_bullets(ai_settings, screen, stats, sb, ship, aliens, bullets)
             gf.update_aliens(ai_settings, stats, sb, screen, ship, aliens, bullets)
-            gf.update_music(mus)
+            gf.update_music(mus,musc)
 
         gf.update_screen(ai_settings, screen, stats, sb, ship, aliens, bullets, play_button)
 

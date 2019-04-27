@@ -193,6 +193,9 @@ def update_aliens(ai_settings, stats, sb, screen, ship, aliens, bullets):
     check_aliens_bottom(ai_settings, stats, sb, screen, ship, aliens, bullets)
 # alien fleet
 
-def update_music(music):
-    music.update()
-    
+def update_music(music,musicchange):
+    if pygame.mixer.music.get_busy() == False:
+        x = musicchange.changemu()
+        music.__init__(x)
+        music.update()
+
